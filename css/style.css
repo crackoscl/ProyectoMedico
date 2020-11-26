@@ -5,15 +5,30 @@ Full Stack Python 2020
  
 #competencias, 
 #contacto {
-    padding: 20px;
+    padding: 50px;
     max-height: 700px;
 }
-.container-fluid h2 {
+#contacto h2 {
+    
+}
+#contacto h1{
+    font-family: 'Bebas Neue', cursive;
     color: black;
+    font-size: 50px;
+}
+#contacto h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 20px;
 }
 #principal {
     padding: 100px 5% 20px;
     min-height: 300px;
+}
+#principal h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px; 
+    color: wheat;
 }
 
 #competencias > div >  h3 {
@@ -24,40 +39,46 @@ Full Stack Python 2020
     padding-top: 60px;
     padding-bottom: 60px;
 }
+#noticia h3 {
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 50px;
+    font-size: 50px;
+}
 
 #enlaces {
     color:white;
     padding-top: 60px;
     min-height: 100%;
 }
+
+#enlaces h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding-left: 50px;
+    font-size: 50px;
+}
+
 #medicalr{
     font-size: 30px;
 }
 .navbar a {
     font-weight: bold;
     font-size: 20px;
-
 }
 
 .navbar-dark {
     background-color:black;
 }
 
-h2, h3, h4, h5, h6, .navbar, .modal { 
+h4, h5, h6, .navbar, .modal { 
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
+}
 
-}
-#principal h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 80px; 
-}
 
 .bg-principal {
-    
     background-image: url('../img/auditoria.jpg');
     background-size: 200px;
-    
 }
 
 .jumbotron {
