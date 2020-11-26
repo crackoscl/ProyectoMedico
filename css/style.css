@@ -3,10 +3,10 @@ Awakelab
 Full Stack Python 2020
 */
  
-#competencias, 
-#contacto {
+#competencias{
     padding-top: 60px;
     min-height: 700px;
+    background-color:#f3f3f3 !important;
 }
 
 #principal {
@@ -71,4 +71,88 @@ textarea {
 
 .footer p {
     display: inline;
+}
+
+
+
+
+/*ESTILOS PROPIOS */
+
+.block-header {
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.block-header h2 {
+    margin: 0 !important;
+    color: #30373e !important;
+    font-weight: 600;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.card .body {
+    color: #424242;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.nav-tabs {
+    background: transparent;
+}
+
+.nav-tabs > li {
+    position: relative;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #ab9ae5 !important;
+}
+.nav-tabs + .tab-content {
+    padding: 15px 0;
+}
+
+#Historial .timeline {
+    border-left: 1px solid #e0e0e0;
+    position: relative;
+}
+
+#Historial .timeline .timeline-item {
+    padding-bottom: 3px;
+    position: relative;
+}
+
+#Historial .timeline .timeline-item {
+    margin-bottom: -4px;
+}
+
+#Historial .timeline .timeline-item .item-content {
+    margin-left: 23px;
+}
+
+#Historial .timeline .timeline-item .item-content {
+    margin-top: 0px;
+}
+
+#Historial .timeline .timeline-item::after{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 2px;
+    content: "";
+    height: 11px;
+    left: 0;
+    margin-left: -6px;
+    position: absolute;
+    width: 11px;
+    bottom: auto;
+    clear: both;
+    top: 4px;
 }
