@@ -107,7 +107,7 @@ textarea {
  margin: auto;
 }
 .carousel-img { 
-    max-width: 800px;
+    max-width: 100% !important;
     
 }
 
