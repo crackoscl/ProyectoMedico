@@ -92,10 +92,6 @@ h4, h5, h6, .navbar, .modal {
     margin: 20px 5% 50px 10%;
 }
 
-#contact-form { 
-    padding-top: 3rem; 
-} 
-
 textarea { 
     resize: none; 
 }
@@ -109,7 +105,6 @@ textarea {
 }
 .carousel-img { 
     max-width: 100% !important;
-    
 }
 
 .carousel-inner {
