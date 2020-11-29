@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <title>Awakelab Full Stack Python</title>
     <meta charset="utf-8">
@@ -13,12 +13,14 @@
       crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" 
         rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">Awakelab</a>
+      <a class="navbar-brand" href="index.html" id="medicalr">MR</a>
 
       <!-- Navigation Bar Hamburger-->
       <button
@@ -39,21 +41,21 @@
               <a
                 class="nav-link scroll-trigger" 
                 href="#principal">
-                  Grupo Python
+                  Usuario
               </a>
             </li>
             <li class="nav-item">
               <a 
                 class="nav-link scroll-trigger" 
                 href="#competencias">
-                  Competencias
+                  Paciente
               </a>
             </li>
             <li class="nav-item">
               <a 
                 class="nav-link scroll-trigger" 
-                href="#equipo">
-                  Equipo
+                href="perfil.html">
+                  Perfil Usuario
               </a>
             </li>
             <li class="nav-item">
@@ -113,113 +115,23 @@
       <!-- Navigation Links -->
     </nav>
     <!-- End Navigation Bar -->
-
-    <!-- Section: Principal -->
+     
     <div class="container-fluid bg-principal" id="principal">
       <div class="row">
         <div class="col-sm-12">
           <div class="jumbotron jumbotron-main">
-            <h2>Grupo Full Stack Python</h2>
-            <h3>Awakelab</h3>
+            <h2>Medical Register</h2>
+            <h3>Sistema de registro medico online</h3>
           </div>
         </div>
       </div>
     </div>
     <!-- End Section: Principal -->
 
-    <!-- Section: Competencias -->
-    <div class="container-fluid bg-dark" id="competencias">
+    <!-- Section: Noticia -->
+    <div class="container-fluid bg-light" id="noticia">
       <div class="row">
-        <h3>Nuestras Competencias</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <h3 class="card-header">Competencia 1</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                  grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <h3 class="card-header">Competencia 2</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <h3 class="card-header">Competencia 3</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <h3 class="card-header">Competencia 4</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-header">Competencia 5</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-header">Competencia 6</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-header">Competencia 7</h3>
-            <div class="card-body">
-              <h4 class="card-title">Subtítitulo competencia</h4>
-              <p class="card-text">Descripción de la competencia del 
-                grupo Full Stack Python de Awakelab.</p>
-              <a href="#!" class="btn btn-dark">Ver mas</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Section: Competencias -->
-
-    <!-- Section: Equipo -->
-    <div class="container-fluid bg-light" id="equipo">
-      <div class="row">
-        <h3>Nuestro Equipo</h3>
+        <h3>Noticias</h3>
       </div>
       <div class="row">
         <div id="team-carousel" 
@@ -228,21 +140,21 @@
             data-interval="3000">
           <div class="carousel-inner" style="padding: 4rem;" role="listbox">
             <div style="height: 400px" class="carousel-item active">
-              <img class="d-block img-fluid carousel-img" src="img/group1.jpg">
+              <img class="d-block img-fluid carousel-img" src="img/mieltopica.jpg">
               <div class="carousel-caption">
-                Grupo Front End
+                La mucositis es una respuesta inflamatoria de las células epiteliales de la mucosa a los efectos citotóxicos de la quimioterapia y la radioterapia. El síntoma principal de la mucositis oral es el dolor oral severamente debilitante. Además aumenta la susceptibilidad a las infecciones, lo que puede ocasionar la muerte del paciente por infecciones y poner en compromiso el tratamiento para el cáncer. Se han usado varios tratamientos para prevenir o reducir la gravedad moderada de la mucositis oral, aunque los resultados no han sido contundentes.
               </div>
             </div>
             <div style="height: 400px" class="carousel-item">
-              <img class="d-block img-fluid carousel-img" src="img/group2.jpg">
+              <img class="d-block img-fluid carousel-img" src="img/sistemainmunologico.jpg">
               <div class="carousel-caption">
-                Grupo Back End
+                En los últimos años, los científicos han descubierto algunos vínculos interesantes entre la inmunidad y la mente. De hecho, una de las moléculas de señalización inmunitaria, o citosinas, que median estos enlaces se llama interleucina-17a (IL-17a)
               </div>
             </div>
             <div style="height: 400px" class="carousel-item">
-              <img class="d-block img-fluid carousel-img" src="img/group3.jpg">
+              <img class="d-block img-fluid carousel-img" src="img/vph.jpg">
               <div class="carousel-caption">
-                Grupo DevOps
+                Las células epiteliales receptoras tienen un papel fundamental en el ciclo de los VPH, en cuanto al crecimiento y diferenciación. A través de lesiones, heridas y laceraciones del tejido el virus entra en las células, sobre todo en las capas más profundas del epitelio.
               </div>
             </div>
           </div>
