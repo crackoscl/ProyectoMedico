@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <style>
+        ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+* { box-sizing: border-box;
+  } 
+  .col-1 {width: 33%;}
+  .col-2 {width: 33%;}
+  .col-3 {width: 33%;}
+  [class*="col-"] 
+  { float: left; padding: 3px; border: 3px solid rgb(27, 42, 73); }
+
+
+/* Mes Header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #95b3da;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 20px;
+  padding: 20px;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Boton anterior mes header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next Button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Lunes-Domingo) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+/* Destacar Cita Medico */
+.days li .cita {
+  padding: 5px;
+  background: #295250;
+  color: white !important
+}
+/* Destacar el dia de hoy */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <div class="col-1">
+    <div class="month">
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>Noviembre<br><span style="font-size:18px">2020</span></li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li>Lu</li>
+      <li>Ma</li>
+      <li>Mie</li>
+      <li>Ju</li>
+      <li>Vi</li>
+      <li>Sa</li>
+      <li>Dom</li>
+    </ul>
+
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li><span class="cita">11</span></li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li><span class="cita">22</span></li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li><span class="active">28</span></li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
+
+    </ul>
+    </div>
+
+    <div class="col-2">
+      <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>Diciembre<br><span style="font-size:18px">2020</span></li>
+        </ul>
+      </div>
+
+      <ul class="weekdays">
+        <li>Lu</li>
+        <li>Ma</li>
+        <li>Mie</li>
+        <li>Ju</li>
+        <li>Vi</li>
+        <li>Sa</li>
+        <li>Dom</li>
+      </ul>
+
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li><span class="cita">8</span></li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li><span class="cita">14</span></li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li><span class="cita">24</span></li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+      </ul>
+      </div>
+
+      <div class="col-3">
+        <div class="month">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>Enero<br><span style="font-size:18px">2021</span></li>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Lu</li>
+          <li>Ma</li>
+          <li>Mie</li>
+          <li>Ju</li>
+          <li>Vi</li>
+          <li>Sa</li>
+          <li>Dom</li>
+        </ul>
+
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li><span class="cita">12</span></li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li><span class="cita">20</span></li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+
+        </ul>
+        </div>
+    </html>
