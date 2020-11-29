@@ -1,4 +1,3 @@
-
 const boton = document.getElementById('enviar')
 const tabla = document.getElementById('Datos')
 
@@ -32,10 +31,10 @@ function AgregarDatos(datos){
 
 function mostrardatos(){
     const datos = JSON.parse(localStorage.getItem('datos'))
-    const items = datos.map(item => {
+    const items = datos.map((item,index) => {
         return `
         <tr>
-            <th scope="row">1</th>
+            <th scope="row">${index}</th>
             <td>${item.nombre}</td>
             <td>${item.rut}</td>
             <td>${item.tipo}</td>
@@ -46,7 +45,8 @@ function mostrardatos(){
     })
     tabla.innerHTML = items.join('')
 }
+
 document.addEventListener("DOMContentLoaded", function () {
    mostrardatos()
-});
 
+});

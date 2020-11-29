@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Awakelab Full Stack Python</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Loading Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylebarra.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Awakelab</a>
+
+        <!-- Navigation Bar Hamburger-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Navigation Bar Hamburger -->
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll-trigger" href="#principal">
+                        Grupo Python
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-trigger" href="#competencias">
+                        Competencias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-trigger" href="perfil.html">
+                        Perfil Usuario
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-trigger" href="#enlaces">
+                        Enlaces
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-trigger" href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Perfil <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item scroll-trigger" href="#" data-toggle="modal"
+                            data-target="#profile-modal">
+                            Perfil
+                        </a>
+                        <a class="dropdown-item scroll-trigger" data-toggle="modal" data-target="#settings-modal">
+                            Configuración
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item scroll-trigger" href="">
+                            Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success border-dark 
+                    font-weight-bold text-white my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Navigation Links -->
+    </nav>
+    <!-- End Navigation Bar -->
+
+
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-2">
+            <div id="perfil" class="d-flex w-100 justify-content-start align-items-center">
+                <img class="img-fluid rounded" src="img/profe luis.jpg">
+            </div>
+            <ul class="list-group sticky-top sticky-offset">
+                <a href="Privada.html" class="bg-dark list-group-item list-group-item-action">
+
+                    <img class="iconos" src="img/ficha medica.png">
+                    Perfil
+                </a>
+                <a href="Examenes.html" class="bg-dark list-group-item list-group-item-action">
+
+                    <img class="iconos" src="img/medicina.png">
+                    examenes
+                </a>
+                <a href="Agendar.html" class="bg-dark list-group-item list-group-item-action">
+
+                    <img class="iconos" src="img/eventos.png">
+                    Agendar
+                </a>
+                <a href="Graficos.html" class="bg-dark list-group-item list-group-item-action">
+
+                    <img class="iconos" src="img/estadisticas.png">
+                    Estadisticas
+                </a>
+
+            </ul>
+        </div>
+        <!-- sidebar-container END -->
+
+        <!-- MAIN -->
+        <div class="col py-3">
+            <div class="block-header">
+                <h2>Examenes</h2>
+                <small class="text-muted"></small>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md12 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row">
+                                <button type="button"  class="btn btn-info mb-4"   data-toggle="modal" data-target="#form">
+                                    Ingresar Examen
+                                </button>  
+                                <table class="table">
+                                    <thead class="thead-inverse">
+                                      <tr>
+                                        <th>#</th>
+                                        <th>Nombre</th>
+                                        <th>Rut</th>
+                                        <th>Tipo de Examen</th>
+                                        <th>Nombre Medico Tratante</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="Datos">
+                                      
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    
+                          <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                  <h5 class="modal-title" id="exampleModalLabel">Ingresar Examen</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <form id="formulario">
+                                  <div class="modal-body">
+                                    <div class="form-group">
+                                      <label for="nombre">Nombre</label>
+                                      <input type="text" class="form-control" id="nombre" placeholder="Ingresar su nombre" required>
+                                      <small class="form-text text-muted">su informacion esta encriptada</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Rut">Rut</label>
+                                        <input type="text" class="form-control" id="Rut" placeholder="Ingresar Rut" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="tipo examen">Tipo de Examen</label>
+                                        <input type="text" class="form-control" id="Tipo" placeholder="Ingresar Tipo de Examen" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Medico">Nombre medico Tratante</label>
+                                        <input type="text" class="form-control" id="Medico" placeholder="Ingresar nombre Medico" required>
+                                      </div>
+                                    
+                                  </div> <!--modal body-->
+                                  <div class="modal-footer border-top-0 d-flex justify-content-center">
+                                    <button id="enviar" class="btn btn-success disabled">Agregar</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--row-->
+        <!-- Main Col END -->
+
+    </div>
+    <!-- body-row END -->
+
+    <footer class="footer fixed.bottom bg-dark text-center">
+        <p class="text-muted">&copy; 2020 Awakelab.</p>
+        <p class="text-muted">Grupo Full Stack Python</p>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
