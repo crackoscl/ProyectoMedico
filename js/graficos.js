@@ -1,7 +1,7 @@
 
-const Azucar = document.getElementById('Azucar')
-const Presion = document.getElementById('Presion')
-const  PerfilRenal = document.getElementById('PerfilRenal')
+const Azucar = document.getElementById('Azucar');
+const Presion = document.getElementById('Presion');
+const  PerfilRenal = document.getElementById('PerfilRenal');
 
 const dataAzucar = [24,60,45,10,15,30]
 const dataPresion = [13,25,40,36,14,42]
@@ -50,8 +50,8 @@ function chars(id, datos,dataLabel,dataType){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-   chars(Azucar,dataAzucar,meses,barType[0])
-   chars(Presion,dataPresion,meses,barType[1])
-   chars(PerfilRenal,dataRenal,meses,barType[2])
+   chars(Azucar,dataAzucar,meses,barType[0]);
+   chars(Presion,dataPresion,meses,barType[1]);
+   chars(PerfilRenal,dataRenal,meses,barType[2]);
 
 });
