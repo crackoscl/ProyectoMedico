@@ -116,18 +116,36 @@ textarea {
 /*JOSE LUIS GUERRA PACHECO*/
 
 
+/*PAMMS*/
 
+.img {width: 300px;
+  border-radius: 15%;}
+
+.img-2 {width: 20%;
+  border-radius: 15%;}
+
+footer {font-family: 'Bebas Neue';
+      text-align: center;
+      font-weight: bold;}
+
+/*PAMMS*/
 
 
 ul {list-style-type: none;}
 body {font-family: 'Bebas Neue', cursive;}
 
   /* Calendario Header */
+
 h1 {text-align: center;
   font-family: 'Bebas Neue', cursive;
   font-weight: lighter;
   color: whitesmoke;
-  background-color:black;}
+}
+
+.media-body{
+  margin-left:25px ;
+
+}
 
 /* Mes Header */
 .month {
